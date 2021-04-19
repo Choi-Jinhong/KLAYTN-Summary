@@ -62,3 +62,22 @@
 <strong>블록전파(Block Propagation)</strong>
 - 위원회에서 합의에 이르게 되면 새로운 블록이 모든 합의 노드들에게 전달되고 합의 라운드는 종료
 - 프록시 노드들을 통해 엔드 노드들에게 해당 블록이 전달되게 됨
+
+### 네트워크 구조
+
+Core Cell Network = CNN + PNN = Core Cell = Consensus Node(CN) + Proxy Node(PN)<br>
+CNN(Consensus Node Network) = 여러 개의 CN + CN BootNode<br>
+PNN(Proxy Node Network) = 여러 개의 PN + PN BootNode<br>
+ENN(Endpoint Node Network) = Endpoint Node + EN BootNode<br>
+_각각의 노드들 끼리는 연결되어 있다._
+_EndpointNode가 실제 서비스를 제공하는 노드들이다._
+
+### 코어 셀(Core cell)
+사용자가 많아 확장이 필요할 때 클레이튼의 경우 코어 셀 노드 자체의 성능을 늘려야 함. 하지만 하나의 노드만 높힐 게 아니라 전체 노드들의 성능을 높혀야 함<br>
+코어 셀 네트워크는 합의를 담당하는 노드이기 때문에 Connection 때문에 성능의 문제가 생기면 안되기 때문에 PN을 사용하게 되고, Endpoint의 확장성을 높힐 수 있음<br>
+
+<strong>CN(합의 노드) 참여 조건</strong>
+- Physical core가 40개 이상
+- 256GB RAM
+- 1년치의 데이터 약 14TB 저장
+- 10G 네트워크
