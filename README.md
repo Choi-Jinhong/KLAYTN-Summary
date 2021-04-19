@@ -1,5 +1,5 @@
 <h1 align="center">Klaytn 클레이튼 블록체인 어플리케이션 만들기</h1>
-<p align="center">Klaytn을 통해 dapp만들어 보기</p>
+<p align="center">Klaytn을 통해 블록체인에 대한 이론을 정리하고 dapp만들어보기</p>
 
 ## 기존 블록체인 플랫폼의 약점
 ### 1. Scalability
